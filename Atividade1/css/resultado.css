@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://images.unsplash.com/photo-1525815732237-469cdd9874ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1955&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    max-width: 900px;
+    font-size: 2rem;
+    color: #ff9100;
+    margin-top: 300px;
+    background-color: white;
+    box-shadow: 3px 5px 10px 1px rgba(146, 141, 141, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}

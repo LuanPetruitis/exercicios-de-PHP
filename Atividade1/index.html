@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="shortcut icon" href="./img/interrogacao.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/estilo.css"> '
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+
+<body>
+    <h1>Esporte </h1>
+    <div class="rolagem">
+        <div class="container">
+            <form action="./resultado.php" method="POST">
+                <div class="input">
+                    <input required type="text" id="name" name="cxnome" />
+                    <label id="nomeLabel">Nome:</label>
+                </div>
+                <h5>1) Quantas medalhas olímpicas Michael Phelps conquistou em sua carreira?</h5>
+                <p>
+                    <label>
+                    <input name="group1" type="radio" value="1" />
+                    <span>10 de ouro, 1 de prata e 0 de bronze</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                    <input name="group1" type="radio" value="2" />
+                    <span>23 de ouro, 2 de prata e 3 de bronze</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                    <input name="group1" type="radio" value="3"  />
+                    <span>29 de ouro, 3 de prata e 1 de bronze</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                    <input name="group1" type="radio" value="4" />
+                    <span>23 de ouro, 3 de prata e 2 de bronze</span>
+                    </label>
+                </p>
+                <h5>2) Quantas medalhas de ouro olímpicas o Brasil ganhou no futebol masculino?</h5>
+                <p>
+                    <label>
+                    <input name="group2" type="radio" value="5" />
+                    <span>2</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                    <input name="group2" type="radio" value="6" />
+                    <span>1</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                    <input name="group2" type="radio" value="7" />
+                    <span>5</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                    <input name="group2" type="radio" value="8" />
+                    <span>3</span>
+                    </label>
+                </p>
+                <h5>3) Quantas medalhas de ouro olímpicas o Usain Bolt ganhou?</h5>
+                <p>
+                    <label>
+                    <input name="group3" type="radio" value="9" />
+                    <span>8 medalhas de ouro</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                    <input name="group3" type="radio" value="10" />
+                    <span>20 medalhas de ouro</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                    <input name="group3" type="radio" value="11"  />
+                    <span>15 medalhas de ouro</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                    <input name="group3" type="radio" value="12" />
+                    <span>18 medalhas de ouro</span>
+                    </label>
+                </p>
+                <h5>4) quantas vezes o Ronaldinho Gaúcho foi eleito o melhor do mundo?</h5>
+                <p>
+                    <label>
+                    <input name="group4" type="radio" value="13"/>
+                    <span>2</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                    <input name="group4" type="radio" value="14" />
+                    <span>1</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                    <input name="group4" type="radio" value="15" />
+                    <span>5</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                    <input name="group4" type="radio" value="16" />
+                    <span>3</span>
+                    </label>
+                </p>
+                <h5>5) Quem é o maior idolo do basquete?</h5>
+                <p>
+                    <label>
+                    <input name="group5" type="radio" value="17" />
+                    <span>Lebron James</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                    <input name="group5" type="radio" value="18" />
+                    <span>Kobe Bryant</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                    <input name="group5" type="radio" value="19"  />
+                    <span>Michael Jordan</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                    <input name="group5" type="radio" value="20" />
+                    <span>Magic Johnson</span>
+                    </label>
+                </p>
+                <h5>6) Quais os anos que o Brasil ganhou a copa do mundo?</h5>
+                <p>
+                    <label>
+                    <input name="group6" type="radio" value="21" />
+                    <span>1950, 1958, 1970, 1994 e 2002</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                    <input name="group6" type="radio"  value="22"/>
+                    <span>1950, 1954, 1970, 1994 e 2002</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                    <input name="group6" type="radio" value="23"  />
+                    <span>1954, 1962, 1970, 1994 e 2002</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                    <input name="group6" type="radio" value="24" />
+                    <span>1958, 1962, 1970, 1994 e 2002</span>
+                    </label>
+                </p>
+                <h5>7) Quantas medalhas o brasil teve nas olimpíadas de 2016?</h5>
+                <p>
+                    <label>
+                    <input name="group7" type="radio" value="25" />
+                    <span>7 de ouro, 6 de prata e 6 de bronze</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                    <input name="group7" type="radio" value="26" />
+                    <span>4 de ouro, 6 de prata e 8 de bronze</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                    <input name="group7" type="radio" value="27" />
+                    <span>7 de ouro, 6 de prata e 5 de bronze</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                    <input name="group7" type="radio" />
+                    <span>2 de ouro, 6 de prata e 6 de bronze</span>
+                    </label>
+                </p>
+                <h5>8) Qual o pais com mais medalhas nas olimpiadas?</h5>
+                <p>
+                    <label>
+                    <input name="group8" type="radio" value="28" />
+                    <span>Alemanha</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                    <input name="group8" type="radio" value="29"/>
+                    <span>China</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                    <input name="group8" type="radio"  value="30"/>
+                    <span>União Soviética</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                    <input name="group8" type="radio" value="31" />
+                    <span>Estados Unidos</span>
+                    </label>
+                </p>
+                <h5>9) Quem foi a pessoas que mais ganhou Copa do Mundo pelo Brasil, como jogador, treinador e auxiliar técnico?</h5>
+                <p>
+                    <label>
+                    <input name="group9" type="radio" value="32"/>
+                    <span>Pelé</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                    <input name="group9" type="radio" value="33" />
+                    <span>Zagallo</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                    <input name="group9" type="radio"  value="34" />
+                    <span>Garrincha</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                    <input name="group9" type="radio" value="35" />
+                    <span>Didi</span>
+                    </label>
+                </p>
+                <h5>10) Quantas medalhas o brasil tem no volei nas olimpiadas?</h5>
+                <p>
+                    <label>
+                    <input name="group10" type="radio" value="36" />
+                    <span>2</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                    <input name="group10" type="radio" value="37" />
+                    <span>1</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                    <input name="group10" type="radio" value="38" />
+                    <span>5</span>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                    <input name="group10" type="radio" value="39" />
+                    <span>6</span>
+                    </label>
+                </p>
+                <div class="botao">
+                    <input type="submit" class="btnEnviar" value="Enviar" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>

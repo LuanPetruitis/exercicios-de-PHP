@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+h1 {
+    text-align: center;
+    color: rgb(250, 105, 2);
+    font-weight: bolder;
+}
+
+.container {
+    color: rgb(255, 175, 2);
+}
+
+div.input {
+    margin-bottom: 24px;
+    position: relative;
+}
+
+#name {
+    color: azure;
+}
+
+#name~#nomeLabel {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.6);
+    transition: .4s;
+}
+
+#name:focus~#nomeLabel,
+#name:valid~#nomeLabel {
+    transform: translateY(-24px);
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+}
+
+label {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+}
+
+label:hover {
+    font-weight: bolder;
+}
+
+.botao {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.btnEnviar {
+    font-size: larger;
+    color: rgb(255, 255, 255);
+    background: orange;
+    padding: 10px 50px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.rolagem {
+    height: 1600px;
+}
+
+.mais {
+    height: 600px;
+}
