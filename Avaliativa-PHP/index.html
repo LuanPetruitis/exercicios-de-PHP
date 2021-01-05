@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIA dos Salgados</title>
+    <link rel="stylesheet" href="./styles/estilo.css">
+    <link rel="shortcut icon" href="./imagens/icone.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container-total">
+        <div class="container">
+            <h1>CIA dos Salgados</h1>
+            <h3>Seja bem vindo e faça seu pedido</h3>
+            <p>Aproveite nossas promoções:  compre três salgados, terá um desconto de 2% no valor total. Acima de três, terá um desconto de 5% no valor tota</p>
+            <form action="resultado.php" method="POST">
+                <div class="input">
+                    <input required type="text" id="name" name="cxnome" />
+                    <label id="nomeLabel">Nome:</label>
+                </div>
+                <div class="input">
+                    <input required type="text" id="numero" name="numero" />
+                    <label id="nomeLabel">Telefone:</label>
+                </div>
+                <p>Selecione qual salgado você deseja</p>
+                <select id="salgado" name="salgado">
+                    <option value="0" selected disabled>Escolha um salgado</option>
+                    <option value="Coxinha">Coxinha</option>
+                    <option value="Quibe">Quibe</option>
+                    <option value="Enroladinho de presunto">Enroladinho de presunto</option>
+                    <option value="Esfiha de Carne">Esfiha de Carne</option>
+                    <option value="Bauruzinho">Bauruzinho</option>
+                </select>
+                <p>Digite quantos salgados você deseja:</p>
+                <input type="number" name="qtd" id="qtd" />
+                <p>Como receberá o pedido</p>
+                <input type="radio" name="entrega" id="entrega" value="0"> No local
+                <input type="radio" name="entrega" id="entrega" value="1"> Em casa
+
+                <div class="botao">
+                    <input type="submit" class="btnEnviar" value="Finalizar pedido" />
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

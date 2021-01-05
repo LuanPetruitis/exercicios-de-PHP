@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: aliceblue;
+    background-color: rgb(0, 0, 0);
+}
+
+.container-total {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 600px;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    padding: 20px 0 5px 0;
+    color: rgb(209, 147, 32);
+    font-size: 2rem;
+}
+
+h3 {
+    padding: 25px 0;
+    color: rgb(209, 147, 32);
+    font-size: 1.4rem;
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+
+div.input {
+    margin-top: 30px;
+    margin-bottom: 24px;
+    position: relative;
+    width: 500px;
+}
+
+#name, #numero {
+    width: 100%;
+    height: 20px;
+    margin-top: 20px;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    background-color: black;
+    border-bottom: 1px solid #ffffff;
+}
+
+#name~#nomeLabel, 
+#numero~#nomeLabel {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    font-size: 1.2rem;
+    color: rgb(231, 225, 225);
+    transition: .4s;
+}
+
+#name:focus~#nomeLabel,
+#name:valid~#nomeLabel,
+#numero:focus~#nomeLabel,
+#numero:valid~#nomeLabel {
+    transform: translateY(-18px);
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+}
+
+label {
+    color: rgb(184, 182, 182);
+    font-size: 1rem;
+}
+
+label:hover {
+    font-weight: bolder;
+}
+
+#salgado {
+    -webkit-appearance: none;
+    -moz-appearance: none; 
+    appearance: none; 
+    background: url(http://www.webcis.com.br/images/imagens-noticias/select/ico-seta-appearance.gif) no-repeat #eeeeee;
+    background-position: 218px center;  
+    width: 250px; 
+    height:30px;
+    border:1px solid #ddd;}
+}
+
+#qtd {
+    width: 400px;
+}
+
+.botao {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.btnEnviar {
+    font-size: larger;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background: orange;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.btnEnviar:hover {
+    background: rgb(194, 126, 0);
+}
