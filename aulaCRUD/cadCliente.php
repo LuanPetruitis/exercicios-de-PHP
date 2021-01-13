@@ -1,3 +1,9 @@
+<?php
+    SESSION_START();
+    if (isset($_SESSION["usuario"])) {
+        $user = $_SESSION["usuario"];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,3 +38,12 @@
 
 </body>
 </html>
+<?php
+    } else {
+        echo "
+            <script>
+                window.location.href = 'index.php';
+            </script>
+        ";
+    }
+?>
