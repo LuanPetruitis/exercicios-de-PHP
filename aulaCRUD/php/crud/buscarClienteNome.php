@@ -1,3 +1,9 @@
+<?php
+    SESSION_START();
+    if ($_SESSION["usuario"]) {
+        $usuario = $_SESSION["usuario"];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +13,8 @@
     <?php include_once 'conexao.php'; ?>
 </head>
 <body>
+    Perfil: <?php echo $usuario ?>
+    <a href="fimSessao.php">Sair</a>
     <div class="listar">
         <?php
             $nome = $_POST["cxbuscanome"];
@@ -46,3 +54,13 @@
     </div>
 </body>
 </html>
+
+<?php
+    } else {
+        echo "
+            <script>
+                window.location.href = '../../index.php';
+            </script>
+        ";
+    }
+?>

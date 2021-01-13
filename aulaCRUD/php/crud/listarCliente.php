@@ -1,3 +1,9 @@
+<?php
+    SESSION_START();
+    if ($_SESSION["usuario"]) {
+        $usuario = $_SESSION["usuario"];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +13,10 @@
     <?php include_once 'conexao.php'; ?>
 </head>
 <body>
+
+    Perfil: <?php echo $usuario ?>
+    <a href="../fimSessao.php">Sair</a>
+
     <div class="listar">
         <?php
             $consulta = "select * from tbcliente";
@@ -21,7 +31,17 @@
               </div>
 
         <?php } ?>
-        <a href="../../index.php">Voltar</a>
+        <a href="../../cadCliente.php">Voltar</a>
     </div>
 </body>
 </html>
+
+<?php
+    } else {
+        echo "
+            <script>
+                window.location.href = '../../index.php';
+            </script>
+        ";
+    }
+?>
